@@ -8,7 +8,7 @@ module "ec2-instance" {
 
   }
 
- output "ids" {
+ output "id" {
   description = "List of IDs of instances"
   value       = "${module.ec2-instance.id}"
 }
