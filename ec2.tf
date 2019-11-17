@@ -4,7 +4,7 @@ provider "aws" {
 
 module "ec2-instance" {
   //https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/1.19.0
-  source                 = "github.com/xsatishx/terraform/tree/master/Modules/EC2"
+  source                 = "github.com/xsatishx/terraform/Modules/EC2"
 
   }
 
