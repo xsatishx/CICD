@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
                         steps {
                 sh "terraform init"
-                sh "terraform plan -var \""name=${params.InstanceName}\"""
+                sh "terraform plan -var \"\"name=${params.InstanceName}\"\"
                // sh "terraform apply -var \"name=${params.InstanceName}\" -auto-approve"
             }
         } 
