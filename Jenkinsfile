@@ -8,7 +8,7 @@ pipeline {
                         steps {
                 sh "terraform init"
                 sh "terraform plan -out tf.state"
-                sh "terraform apply -var \"${params.InstanceName}\" -auto-approve -state=tf.state"
+                sh "terraform apply -var name=\"${params.InstanceName}\" -auto-approve -state=tf.state"
             }
         } 
 
