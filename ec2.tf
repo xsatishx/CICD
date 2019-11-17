@@ -7,8 +7,3 @@ module "ec2-instance" {
   source                 = "github.com/xsatishx/terraform/Modules/EC2"
 
   }
-
-output "instance_id" {
-  description = "EC2 instance ID"
-  value       = "${module.ec2-instance.id[0]}"
-}
