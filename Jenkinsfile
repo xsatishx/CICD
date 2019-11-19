@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('build') {
                         steps {
-                sh "terraform init"
-                sh "terraform plan"
+                sh "sudo terraform init"
+                sh "sudo terraform plan"
                // sh "terraform apply -var \"name=${params.InstanceName}\" -auto-approve"
             }
         } 
