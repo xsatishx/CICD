@@ -6,7 +6,8 @@ pipeline {
                         steps {
                 sh "sudo terraform init"
                 sh "sudo terraform plan"
-               // sh "terraform apply -var \"name=${params.InstanceName}\" -auto-approve"
+                sh "sudo terraform apply -auto-approve"
+                //sh "terraform apply -var \"name=${params.InstanceName}\" -auto-approve"
             }
         } 
 
