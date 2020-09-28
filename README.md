@@ -1,2 +1,2 @@
 # CICD
-CI CD demo repo
+Demo of CICD
